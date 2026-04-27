@@ -1,26 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { CtaBanner } from "@/components/sections/CtaBanner";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Safewell Security Services — Your Safety, Our Priority" },
+      { name: "description", content: "Premium security agency: manned guarding, CCTV, VIP protection, event and industrial security." },
+      { property: "og:title", content: "Safewell Security Services" },
+      { property: "og:description", content: "Premium security solutions you can trust. 24/7 protection." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <WhyChooseSection />
+      <ProcessSection />
+      <TestimonialsSection />
+      <GallerySection />
+      <CtaBanner />
+    </>
+  );
 }
