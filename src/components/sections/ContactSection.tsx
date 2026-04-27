@@ -73,9 +73,9 @@ export function ContactSection() {
 
           <div className="space-y-5">
             {[
-              { icon: Phone, title: "Phone", text: "+1 (555) 010-2030" },
-              { icon: Mail, title: "Email", text: "contact@safewell.security" },
-              { icon: MapPin, title: "Location", text: "245 Tactical Ave, Suite 9, NY" },
+              { icon: Phone, title: "Phone", text: "+91 97012 98207" },
+              { icon: Mail, title: "Email", text: "safewellmanagement01@gmail.com" },
+              { icon: MapPin, title: "Location", text: "12-124, Shanti Nagar, Patancheru, Hyderabad" },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 0.07}>
                 <div className="card-tilt flex items-center gap-4 rounded-xl border border-border bg-surface/70 p-5">

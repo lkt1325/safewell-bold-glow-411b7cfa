@@ -37,9 +37,9 @@ export function Footer() {
         <div>
           <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-primary">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /> +1 (555) 010-2030</li>
-            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> contact@safewell.security</li>
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> 245 Tactical Ave, Suite 9, NY</li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /> +91 97012 98207</li>
+            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> safewellmanagement01@gmail.com</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> 12-124, Shanti Nagar, Patancheru, Hyderabad</li>
           </ul>
         </div>
 
