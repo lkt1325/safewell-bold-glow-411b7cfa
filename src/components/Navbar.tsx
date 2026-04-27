@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X, ShieldCheck } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/safewell-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -30,12 +31,15 @@ export function Navbar() {
       }`}
     >
       <div className="container-x flex h-18 items-center justify-between py-4">
-        <Link to="/" className="group flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-primary-foreground shadow-[0_0_20px_color-mix(in_oklab,var(--primary)_60%,transparent)] transition-transform group-hover:rotate-6">
-            <ShieldCheck className="h-5 w-5" strokeWidth={2.5} />
-          </span>
-          <span className="font-display text-lg font-bold tracking-wider">
-            SAFEWELL<span className="text-primary">.</span>
+        <Link to="/" className="group flex items-center gap-3">
+          <img
+            src={logo}
+            alt="Safewell Security Services"
+            className="h-11 w-11 object-contain drop-shadow-[0_0_12px_color-mix(in_oklab,var(--primary)_55%,transparent)] transition-transform group-hover:scale-105"
+          />
+          <span className="hidden sm:flex flex-col leading-none">
+            <span className="font-display text-base font-bold tracking-[0.18em] text-foreground">SAFEWELL</span>
+            <span className="font-display text-[10px] font-semibold tracking-[0.32em] text-primary">SECURITY SERVICES</span>
           </span>
         </Link>
 

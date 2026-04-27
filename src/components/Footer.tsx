@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { ShieldCheck, Facebook, Instagram, Twitter, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/safewell-logo.png";
 
 export function Footer() {
   return (
@@ -7,12 +8,15 @@ export function Footer() {
       <div className="stripe-divider" />
       <div className="container-x grid gap-10 py-16 md:grid-cols-4">
         <div>
-          <Link to="/" className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-primary-foreground">
-              <ShieldCheck className="h-5 w-5" strokeWidth={2.5} />
-            </span>
-            <span className="font-display text-lg font-bold tracking-wider">
-              SAFEWELL<span className="text-primary">.</span>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="Safewell Security Services"
+              className="h-12 w-12 object-contain drop-shadow-[0_0_12px_color-mix(in_oklab,var(--primary)_50%,transparent)]"
+            />
+            <span className="flex flex-col leading-none">
+              <span className="font-display text-base font-bold tracking-[0.18em]">SAFEWELL</span>
+              <span className="font-display text-[10px] font-semibold tracking-[0.32em] text-primary">SECURITY SERVICES</span>
             </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
