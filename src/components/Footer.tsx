@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Twitter, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/safewell-logo.png";
 
 export function Footer() {
   return (
     <footer className="relative border-t border-border bg-surface/60">
       <div className="stripe-divider" />
-      <div className="container-x grid gap-10 py-16 md:grid-cols-4">
+      <div className="container-x grid gap-10 py-16 md:grid-cols-3">
         <div>
           <Link to="/" className="flex items-center gap-3">
             <img
@@ -43,21 +43,6 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-primary">Follow</h4>
-          <div className="flex gap-3">
-            {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                aria-label="Social link"
-                className="grid h-10 w-10 place-items-center rounded-md border border-border text-foreground/80 transition-all hover:border-primary hover:text-primary hover:shadow-[var(--shadow-glow-sm)]"
-              >
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
       <div className="border-t border-border">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-6 text-xs text-muted-foreground md:flex-row">

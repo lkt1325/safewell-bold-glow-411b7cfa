@@ -17,7 +17,7 @@ export function ServicesSection() {
       <div className="container-x">
         <SectionHeading
           eyebrow="What We Do"
-          title={<>Tactical <span className="text-gradient-gold">Services</span></>}
+          title={<>Our <span className="text-gradient-gold">Services</span></>}
           description="A full spectrum of physical and electronic security capabilities — engineered around your risk profile."
         />
 
