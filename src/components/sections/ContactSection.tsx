@@ -94,7 +94,7 @@ export function ContactSection() {
               <div className="overflow-hidden rounded-xl border border-border">
                 <iframe
                   title="Safewell location map"
-                  src="https://www.google.com/maps?q=Manhattan,New+York&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.6494083218186!2d78.26563337493803!3d17.524241583386473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6f2433ea6fcd201d%3A0xf8766f036826d6c5!2sSAFEWELL%20SECURITY%20SERVICES!5e0!3m2!1sen!2sin!4v1777287126724!5m2!1sen!2sin"
                   width="100%"
                   height="260"
                   loading="lazy"
