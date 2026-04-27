@@ -2,7 +2,6 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/safewell-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -31,15 +30,10 @@ export function Navbar() {
       }`}
     >
       <div className="container-x flex h-18 items-center justify-between py-4">
-        <Link to="/" className="group flex items-center gap-3">
-          <img
-            src={logo}
-            alt="Safewell Security Services"
-            className="h-11 w-11 object-contain drop-shadow-[0_0_12px_color-mix(in_oklab,var(--primary)_55%,transparent)] transition-transform group-hover:scale-105"
-          />
-          <span className="hidden sm:flex flex-col leading-none">
-            <span className="font-display text-base font-bold tracking-[0.18em] text-foreground">SAFEWELL</span>
-            <span className="font-display text-[10px] font-semibold tracking-[0.32em] text-primary">SECURITY SERVICES</span>
+        <Link to="/" className="group flex items-center">
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-sm font-bold tracking-[0.18em] text-foreground sm:text-base">SAFEWELL</span>
+            <span className="font-display text-[9px] font-semibold tracking-[0.28em] text-primary sm:text-[10px] sm:tracking-[0.32em]">SECURITY SERVICES</span>
           </span>
         </Link>
 
