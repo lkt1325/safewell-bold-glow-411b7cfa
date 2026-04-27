@@ -22,14 +22,14 @@ export function AboutSection() {
           className="relative"
         >
           <div className="absolute -inset-3 -z-10 rounded-2xl bg-primary/20 blur-2xl" />
-          <div className="overflow-hidden rounded-2xl border border-border">
+          <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-border aspect-[4/5]">
             <img
               src={aboutImg}
-              alt="Safewell trained security team"
+              alt="Safewell uniformed security guards on duty"
               loading="lazy"
-              width={1280}
-              height={1280}
-              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+              width={1080}
+              height={1350}
+              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
             />
           </div>
           <div className="absolute -bottom-6 -right-6 hidden rounded-xl border border-primary/40 bg-background/80 p-5 backdrop-blur md:block">
