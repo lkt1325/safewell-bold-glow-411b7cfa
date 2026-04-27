@@ -32,10 +32,6 @@ export function AboutSection() {
               className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
             />
           </div>
-          <div className="absolute -bottom-6 -right-6 hidden rounded-xl border border-primary/40 bg-background/80 p-5 backdrop-blur md:block">
-            <div className="font-display text-4xl font-bold text-primary">10+</div>
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Years of Service</div>
-          </div>
         </motion.div>
 
         <div>
