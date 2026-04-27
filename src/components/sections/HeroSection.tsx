@@ -82,25 +82,6 @@ export function HeroSection() {
               Contact Us
             </Link>
           </motion.div>
-
-          {/* Stats strip */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            className="mt-16 grid max-w-2xl grid-cols-3 gap-6 border-t border-border pt-8"
-          >
-            {[
-              { v: "10+", l: "Years" },
-              { v: "1000+", l: "Guards" },
-              { v: "24/7", l: "Response" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-3xl font-bold text-primary md:text-4xl">{s.v}</div>
-                <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{s.l}</div>
-              </div>
-            ))}
-          </motion.div>
         </div>
 
         {/* Logo showcase (replaces the person image) */}
