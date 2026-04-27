@@ -89,7 +89,7 @@ export function GallerySection() {
             />
           </AnimatePresence>
 
-          {/* Foreground slide */}
+          {/* Foreground slide — fully visible (contain) */}
           <AnimatePresence mode="sync">
             <motion.img
               key={`img-${index}`}
@@ -97,41 +97,14 @@ export function GallerySection() {
               alt={current.alt}
               loading="lazy"
               decoding="async"
-              initial={{ opacity: 0, scale: 1.06 }}
+              initial={{ opacity: 0, scale: 1.04 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 1.02 }}
+              exit={{ opacity: 0, scale: 1.01 }}
               transition={{ duration: 0.9, ease: [0.4, 0, 0.2, 1] }}
-              className="absolute inset-0 m-auto h-full w-full object-contain md:object-cover"
+              className="absolute inset-0 m-auto h-full w-full object-contain"
               style={{ objectPosition: "center" }}
             />
           </AnimatePresence>
-
-          {/* Dark gradient overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
-
-          {/* Text overlay */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 px-6 pb-16 md:pb-20">
-            <div className="container-x">
-              <motion.p
-                key={`label-${index}`}
-                initial={{ opacity: 0, y: 14 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary"
-              >
-                Safewell Security Services
-              </motion.p>
-              <motion.h3
-                key={`title-${index}`}
-                initial={{ opacity: 0, y: 14 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.18 }}
-                className="mt-2 max-w-2xl font-display text-2xl font-bold text-white md:text-4xl"
-              >
-                Professional Security Solutions
-              </motion.h3>
-            </div>
-          </div>
 
           {/* Arrows */}
           <button
