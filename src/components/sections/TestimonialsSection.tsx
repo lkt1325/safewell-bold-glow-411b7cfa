@@ -2,11 +2,11 @@ import { Quote, Star } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const reviews = [
-  { name: "Marcus L.", role: "Facility Director", text: "Safewell transformed our site security overnight. Professional, prompt, and proactive." },
-  { name: "Aisha R.", role: "Event Producer", text: "Flawless crowd management at a 5,000-person event. The team was sharp and seamless." },
-  { name: "David K.", role: "Estate Manager", text: "Discreet, reliable, and always one step ahead. We trust them with our most valuable assets." },
-  { name: "Priya S.", role: "Operations Lead", text: "Their command center response time is unmatched. True 24/7 coverage." },
-  { name: "Jonas H.", role: "Plant Manager", text: "Industrial-grade protection with the discipline of a military unit. Highly recommended." },
+  { name: "Rajesh Sharma", role: "Facility Manager", text: "Safewell Security Services has been handling our office security for over a year now. Their guards are punctual, well-trained, and very professional. We've seen a noticeable improvement in overall safety." },
+  { name: "Priya Reddy", role: "Event Organizer", text: "We hired Safewell for our corporate event, and their team did an excellent job. Everything was well-managed, and the staff was disciplined and alert throughout." },
+  { name: "Amit Verma", role: "Residential Society Secretary", text: "Their security personnel are reliable and respectful. Residents feel much safer now, and the team handles entry/exit very efficiently." },
+  { name: "Sandeep Gupta", role: "Warehouse Owner", text: "Very dependable service. The guards are attentive and take their responsibilities seriously. I highly recommend Safewell Security Services." },
+  { name: "Neha Singh", role: "Business Owner", text: "Professional and responsive team. From onboarding to daily operations, everything has been smooth and well-managed." },
 ];
 
 export function TestimonialsSection() {
