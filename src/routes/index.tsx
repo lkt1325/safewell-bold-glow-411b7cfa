@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-import { ProcessSection } from "@/components/sections/ProcessSection";
+
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { GallerySection } from "@/components/sections/GallerySection";
 import { CtaBanner } from "@/components/sections/CtaBanner";
@@ -27,7 +27,6 @@ function Index() {
       <AboutSection />
       <ServicesSection />
       <WhyChooseSection />
-      <ProcessSection />
       <TestimonialsSection />
       <GallerySection />
       <CtaBanner />
