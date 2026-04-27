@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 import { Link } from "@tanstack/react-router";
 
 const features = [
-  { icon: ShieldCheck, title: "Trust", desc: "Background-vetted, licensed personnel committed to your safety." },
-  { icon: Award, title: "Experience", desc: "Over a decade safeguarding people, property, and operations." },
-  { icon: Users, title: "Protection", desc: "Tactical response and proactive risk mitigation, around the clock." },
+  { icon: ShieldCheck, title: "Trust", desc: "Friendly, licensed guards you can rely on every day." },
+  { icon: Award, title: "Experience", desc: "More than ten years of looking after homes, offices, and events." },
+  { icon: Users, title: "Care", desc: "Polite, attentive watchmen who treat your space like their own." },
 ];
 
 export function AboutSection() {
@@ -34,7 +34,7 @@ export function AboutSection() {
           </div>
           <div className="absolute -bottom-6 -right-6 hidden rounded-xl border border-primary/40 bg-background/80 p-5 backdrop-blur md:block">
             <div className="font-display text-4xl font-bold text-primary">10+</div>
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Years Protecting</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">Years of Service</div>
           </div>
         </motion.div>
 
@@ -46,14 +46,12 @@ export function AboutSection() {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="font-display text-4xl font-bold uppercase tracking-tight md:text-5xl">
-              A standard of <span className="text-gradient-gold">vigilance</span>
+              Watchful, friendly, <span className="text-gradient-gold">always there.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-base text-muted-foreground md:text-lg">
-              Safewell Security Services delivers premium protection backed by trained personnel,
-              modern surveillance, and battle-tested protocols. From corporate campuses to private estates,
-              we operate with discipline, discretion, and unwavering reliability.
+              Safewell Security Services provides trained, uniformed security guards and watchmen for homes, offices, shops, and events. We focus on a calm, respectful presence — the kind of quiet, dependable team you’re glad to see at the gate.
             </p>
           </Reveal>
 
