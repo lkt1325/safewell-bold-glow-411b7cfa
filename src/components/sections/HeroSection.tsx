@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ShieldCheck, ChevronDown } from "lucide-react";
 import { useRef } from "react";
-import heroImg from "@/assets/hero-guard.jpg";
+import logo from "@/assets/safewell-logo.png";
 
 export function HeroSection() {
   const ref = useRef<HTMLDivElement>(null);
