@@ -14,7 +14,7 @@ export function CtaBanner() {
               <div>
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-primary">Ready when you are</p>
                 <h3 className="font-display text-3xl font-bold uppercase leading-tight md:text-5xl">
-                  Secure your operation. <span className="text-gradient-gold">Today.</span>
+                  Professional Security Solutions for <span className="text-gradient-gold">Every Need</span>
                 </h3>
                 <p className="mt-4 max-w-xl text-muted-foreground md:text-lg">
                   Talk to a security strategist. Get a tailored plan and quote within 24 hours.
